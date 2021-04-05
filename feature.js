@@ -23,13 +23,13 @@ window.addEventListener('mousemove',function(e)
 })
 
 ctx.fillStyle = "white";
-if(input.length<=7){
-    ctx.font = "25px monospace";
+if(input.length<7){
+    ctx.font = "17px monospace";
 }
 else if (input.length<11){
-    ctx.font = "18px monospace";
+    ctx.font = "15px monospace";
 }else{
-    ctx.font = "14px monospace";
+    ctx.font = "11px monospace";
 }
 ctx.fillText(input, 0, 60);
 const textCordinates = ctx.getImageData(0, 0, 100, 100);
@@ -154,7 +154,7 @@ function connect()
             let dx = ParticleArray[a].x - ParticleArray[b].x;
             let dy = ParticleArray[a].y - ParticleArray[b].y;
             let distance = Math.sqrt(dx*dx +dy*dy);
-            if(distance<40)
+            if(distance<30)
             {
                 opacityValue = 1-(distance/40);
                 let mousedx = mouse.x-ParticleArray[a].x;
