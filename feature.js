@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let publicArray = [];
 adjustx = 10
-adjusty = -20
+adjusty = -30
 
 // handle mouse
 const mouse = {
